@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame neurológico</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h2>Nível de consciência</h2>
+  <h3>Glasgow Coma Scale</h3>
+  <h4>Abertura ocular:</h4>
+  <div class="custom-select" data-select-name="eyeOpening">
+    <div class="option" data-value="NT">Não testável</div>
+    <div class="option" data-value="1">Ausente</div>
+    <div class="option" data-value="2">À dor</div>
+    <div class="option" data-value="3">Ao chamado</div>
+    <div class="option" data-value="4">Espontânea</div>
+  </div>
+  <h4>Resposta verbal:</h4>
+  <div class="custom-select" data-select-name="verbalResponse">
+    <div class="option" data-value="NT">Não testável / Intubado</div>
+    <div class="option" data-value="1">Ausente</div>
+    <div class="option" data-value="2">Sons incompreensíveis</div>
+    <div class="option" data-value="3">Palavras inapropriadas</div>
+    <div class="option" data-value="4">Confuso</div>
+    <div class="option" data-value="5">Orientado</div>
+  </div>
+  <h4>Resposta motora:</h4>
+  <div class="custom-select" data-select-name="motorResponse">
+    <div class="option" data-value="NT">Não testável / Intubado</div>
+    <div class="option" data-value="1">Ausente</div>
+    <div class="option" data-value="2">Extensão</div>
+    <div class="option" data-value="3">Flexão anormal</div>
+    <div class="option" data-value="4">Flexão normal</div>
+    <div class="option" data-value="5">Localiza a dor</div>
+    <div class="option" data-value="6">Obedece a comandos</div>
+  </div>
+
+  <p>Abertura ocular: <span id="selectedEyeOpening">-</span></p>
+  <p>Resposta verbal: <span id="selectedVerbalResponse">-</span></p>
+  <p>Resposta motora: <span id="selectedMotorResponse">-</span></p>
+  
+  <script src="js/main.js"></script>  
+</body>
+</html>
