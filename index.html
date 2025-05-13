@@ -15,7 +15,7 @@
   <h3>Glasgow Coma Scale</h3>
   <h4>Abertura ocular:</h4>
   <div class="gcs custom-select" data-select-name="eyeOpening">
-    <div class="option" data-value="NT">Não testável</div>
+    <div class="option" data-value="NT" selected>Não testável</div>
     <div class="option" data-value="1">Ausente</div>
     <div class="option" data-value="2">À dor</div>
     <div class="option" data-value="3">Ao chamado</div>
@@ -23,7 +23,7 @@
   </div>
   <h4>Resposta verbal:</h4>
   <div class="gcs custom-select" data-select-name="verbalResponse">
-    <div class="option" data-value="NT">Não testável / Intubado</div>
+    <div class="option" data-value="NT" selected>Não testável / Intubado</div>
     <div class="option" data-value="1">Ausente</div>
     <div class="option" data-value="2">Sons incompreensíveis</div>
     <div class="option" data-value="3">Palavras inapropriadas</div>
@@ -32,7 +32,7 @@
   </div>
   <h4>Resposta motora:</h4>
   <div class="gcs custom-select" data-select-name="motorResponse">
-    <div class="option" data-value="NT">Não testável / Intubado</div>
+    <div class="option" data-value="NT" selected>Não testável / Intubado</div>
     <div class="option" data-value="1">Ausente</div>
     <div class="option" data-value="2">Extensão</div>
     <div class="option" data-value="3">Flexão anormal</div>
@@ -41,10 +41,10 @@
     <div class="option" data-value="6">Obedece a comandos</div>
   </div>
 
-  <p>Abertura ocular: <span id="selectedEyeOpening">-</span></p>
-  <p>Resposta verbal: <span id="selectedVerbalResponse">-</span></p>
-  <p>Resposta motora: <span id="selectedMotorResponse">-</span></p>
-  <p>GCS <span id="gcs-result"> -- </span></p>
+  <p>Abertura ocular: <span id="selectedEyeOpening">?</span></p>
+  <p>Resposta verbal: <span id="selectedVerbalResponse">?</span></p>
+  <p>Resposta motora: <span id="selectedMotorResponse">?</span></p>
+  <p>GCS <span id="gcs-result"> -- </span> (<span id="gcs-avm"></span>)</p>
   
 
   <!-- ESCALA RASS -->

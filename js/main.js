@@ -56,7 +56,17 @@ function recalculateGCS(){
   } else {
     document.getElementById('gcs-result').textContent = gcs;
   }
+
+  // Display GCS by area (Eye,Verbal, Motor), in the format OVM
+  document.getElementById('gcs-avm').textContent = 'O' +
+    document.getElementById('selectedEyeOpening').textContent+
+    'V' + document.getElementById('selectedVerbalResponse').textContent +
+    'M' + document.getElementById('selectedMotorResponse').textContent;
 }
+
+
+
+
 
 // RASS - Display value
 const selectRass = document.getElementById('rass-select');
