@@ -8,7 +8,10 @@
 </head>
 
 <body>
+
   <h2>Nível de consciência</h2>
+
+  <!--ESCALA DE COMA DE GLASGOW-->
   <h3>Glasgow Coma Scale</h3>
   <h4>Abertura ocular:</h4>
   <div class="custom-select" data-select-name="eyeOpening">
@@ -43,43 +46,23 @@
   <p>Resposta motora: <span id="selectedMotorResponse">-</span></p>
   
 
-  <h3>RASS</h3>
-  <select>
-    
-orResponse">-</span></p>
-  
-
-  <h3>RASS</h3>
-  <select>
-    
-rResponse">-</span></p>
-  
-
-  <h3>RASS</h3>
-  <select>
-orResponse">-</span></p>
-  
-
-  <h3>RASS</h3>
-  <select>
-    
-    
-rResponse">-</span></p>
-  
-
-  <h3>RASS</h3>
-  <select>
+  <!-- ESCALA RASS -->
+  <h3>Richmond Agitation-Sedation Scale</h3>
+  <select id="rass-select">
+    <option value="" selected> Selecione uma opção </option>
     <option value="4">AGRESSIVO: Violento, perigoso</option>
-    <option value="3">MUITO AGITADO: Conduta agressiva, remoção de tubos e cat´eteres</option>
-    <option value="2">AGITADO: movimentos sem coordenaç˜ao</option>
+    <option value="3">MUITO AGITADO: Conduta agressiva, remoção de tubos e catéteres</option>
+    <option value="2">AGITADO: movimentos sem coordenação</option>
     <option value="1">INQUIETO: ansioso, sem movimentos agressivos ou vigorosos</option>
     <option value="0">ALERTA, CALMO</option>
     <option value="-1">SONOLENTO: desperta de forma sustentada ( mais que 10s) ao som da voz</option>
-    <option value="-2">SEDAÇ˜AO LEVE: acorda rapidamente (menos que 10s) e faz contato visual ao som da voz</option>
-    <option value="-3">SEDAÇ˜AO MODERADA: movimento ou abertura dos olhos ao som da voz, sem contato visual</option>
-    <option value="-4">SEDAÇ˜AO PROFUNDA: n˜ao responde ao som da voz mas movimenta ou abre os olhos ao est´imulo f´isico</option>
-    <option value="-5">INCAPAZ DE SER DESPERTADO: n˜ao responde ˋa voz ou est´imulo f´isico</option>
+    <option value="-2">SEDAÇÃO LEVE: acorda rapidamente (menos que 10s) e faz contato visual ao som da voz</option>
+    <option value="-3">SEDAÇÃO MODERADA: movimento ou abertura dos olhos ao som da voz, sem contato visual</option>
+    <option value="-4">SEDAÇÃO PROFUNDA: não responde ao som da voz mas movimenta ou abre os olhos ao estímulo físico</option>
+    <option value="-5">INCAPAZ DE SER DESPERTADO: não responde à voz ou estímulo físico</option>
   </select>
+  <p id="rass-result">RASS: não avaliado</p>
+
   <h3>FOUR</h3>
   <script src="js/main.js"></script>  
 </body>

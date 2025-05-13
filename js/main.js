@@ -30,3 +30,12 @@ document.querySelectorAll('.custom-select').forEach(select => {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+// RASS - Display value
+const selectRass = document.getElementById('rass-select');
+const output = document.getElementById('rass-result');
+
+selectRass.addEventListener('change', function () {
+  const selectedValue = this.value;
+  output.textContent = `RASS: ${selectedValue}`;
+});
